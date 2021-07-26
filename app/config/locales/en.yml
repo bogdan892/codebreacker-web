@@ -1,6 +1,7 @@
 en:
   codebreacker: "Codebreaker 2021"
   hello: 'Hello,'
+  home: 'Try to guess 4-digit number, that consists of numbers in a range from 1 to 6.'
   home_text: "Hello, %{user_name}  to guess 4-digit number, that consists of numbers in a range from 1 to 6."
   lose_text: ' Oops, %{user_name}! You lose the game!'
   win_text: 'Congratulations, %{user_name}! You won the game!'
