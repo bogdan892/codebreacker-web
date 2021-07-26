@@ -9,8 +9,8 @@ use Rack::Session::Cookie, key: 'rack.session',
                            secret: 'change_me',
                            old_secret: 'also_change_me'
 
-use GameWon
-use GameLose
-use GameCheckActive
+use RedirectHome
+use RedirectActiveGame
+use CheckGameStatus
 
 run Router

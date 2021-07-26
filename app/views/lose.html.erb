@@ -46,11 +46,10 @@
             <div class="text-center">
               <div class="text-center">
                 <h3 class="text-white">
-                  Oops, <%=user_name %>! You lose the game!
+                 <%=I18n.t(:lose_text , user_name:user_name) %>
                 </h3>
                 <h4 class="text-white">
-                  The code was
-                  <strong><%=secret_code %>!</strong>
+                  <%=I18n.t(:show_code , secret_code:secret_code) %>
                 </h4>
               </div>
               <img src="assets/images/lost.gif" class="img-fluid" alt="You lose the game!">
@@ -58,10 +57,10 @@
           </div>
           <hr class="mb-4">
           <a class="btn btn-primary btn-lg" href="<%=Constants::HOME_URL %>" role="button">
-            Play again!
+            <%=I18n.t(:play_again) %>
           </a>
           <a class="btn btn-success btn-lg float-right" href="<%=Constants::STATISTICS_URL %>" role="button">
-            Statistics
+            <%=I18n.t(:statistics_button) %>
           </a>
         </div>
        </div>

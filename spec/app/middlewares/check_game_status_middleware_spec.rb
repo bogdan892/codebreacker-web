@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe GameCheckActive do
+RSpec.describe CheckGameStatus do
   def app
     Rack::Builder.parse_file('config.ru').first
   end

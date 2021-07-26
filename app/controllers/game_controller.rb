@@ -33,7 +33,6 @@ class GameController < BaseController
 
   def game_won
     save_date(game.to_h)
-    @app.session.clear
     redirect(Constants::WIN_URL)
   end
 

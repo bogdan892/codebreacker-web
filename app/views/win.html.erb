@@ -16,7 +16,7 @@
         <div class="col-12 col-md-6">
           <div class="row">
             <div class="col-md-auto">
-              <h1 class="text-white title inline-block">Codebreaker 2018</h1>
+              <h1 class="text-white title inline-block">  <%= I18n.t(:codebreacker) %></h1>
             </div>
           </div>
           <div class="row">
@@ -46,7 +46,7 @@
             <div class="text-center">
               <div class="text-center">
                 <h3 class="text-white">
-                  Congratulations, <%=user_name %>! You won the game!
+                  <%= I18n.t(:win_text ,user_name: user_name) %>
                 </h3>
               </div>
               <img src="assets/images/won.gif" class="img-fluid" alt="You won the game!">
@@ -54,10 +54,10 @@
           </div>
           <hr class="mb-4">
           <a class="btn btn-primary btn-lg" href="<%=Constants::HOME_URL %>" role="button">
-            Play again!
+            <%= I18n.t(:play_again) %>
           </a>
           <a class="btn btn-success btn-lg float-right" href="<%=Constants::STATISTICS_URL %>" role="button">
-            Statistics
+            <%= I18n.t(:statistics_button) %>
           </a>
         </div>
        </div>

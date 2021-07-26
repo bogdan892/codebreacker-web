@@ -45,11 +45,11 @@
               <hr class="mb-4">
 
               <button type="submit" class="btn btn-primary btn-lg">
-                Start the game!
+                <%=I18n.t(:start_button) %>
               </button>
               <span class="float-right">
-                <a class="btn btn-warning btn-lg" href="<%=RULES_URL %>" role="button">Rules</a>
-                <a class="btn btn-success btn-lg" href="<%=STATISTICS_URL %>" role="button">Statistics</a>
+                <a class="btn btn-warning btn-lg" href="<%=RULES_URL %>" role="button"><%=I18n.t(:rules_button) %></a>
+                <a class="btn btn-success btn-lg" href="<%=STATISTICS_URL %>" role="button"><%=I18n.t(:statistics_button) %></a>
               </span>
             </form>
           </div>
