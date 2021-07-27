@@ -28,13 +28,11 @@ module GameLogic
   end
 
   def game_attempts
-    # binding.pry
     game.instance_variable_get(:@attempts)
   end
 
   def game_hints
     game.instance_variable_get(:@hints)
-    # game.hints
   end
 
   def use_hints
@@ -45,8 +43,6 @@ module GameLogic
   def check_hint
     game.use_hint
   end
-
-  def game_result; end
 
   def user_code(code)
     @input_code = game.input_code(code)

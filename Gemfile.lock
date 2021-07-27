@@ -76,16 +76,16 @@ PLATFORMS
 
 DEPENDENCIES
   codebreaker!
-  erb
-  i18n
-  pry
-  rack
-  rack-test
-  rspec
-  rubocop
-  rubocop-performance
-  rubocop-rspec
-  simplecov
+  erb (~> 2.2.3)
+  i18n (~> 1.8.10)
+  pry (~> 0.14.1)
+  rack (~> 2.2.3)
+  rack-test (~> 1.1.0)
+  rspec (~> 3.10.0)
+  rubocop (~> 1.18.4)
+  rubocop-performance (~> 1.11.4)
+  rubocop-rspec (~> 2.4.0)
+  simplecov (~> 0.21.2)
 
 RUBY VERSION
    ruby 2.7.2p137

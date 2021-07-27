@@ -1,17 +1,5 @@
 # frozen_string_literal: true
 
-# require 'rack'
-# # require 'thin'
-
-# PAGES2 = {
-#   :/ => [HomeController, HOME_URL, HOME_VIEW],
-#   :game => [GameController, GAME_URL, GAME_VIEW],
-#   :lose => [LoseController, LOSE_URL, LOSE_VIEW],
-#   :rules => [RulesController, RULES_URL, RULES_VIEW],
-#   :statistics => [StatisticsController, STATISTICS_URL, STATISTICS_VIEW],
-#   :win => [WinController, WIN_URL, WIN_VIEW]
-# }
-
 class Router
   include Constants
 
