@@ -27,10 +27,6 @@ class BaseMiddleware
     [301, { 'Location' => path }, ['']]
   end
 
-  def check_active_game?
-    !@game.nil? && !@game.won? && !@game.lose? && (@path == Constants::LOSE_URL || @path == Constants::WIN_URL)
-  end
-
   def game_route?
     [Constants::LOSE_URL, Constants::WIN_URL, Constants::GAME_URL].include?(@path)
   end
