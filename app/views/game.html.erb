@@ -76,11 +76,10 @@
             </form>
             <button form="hint" class="btn btn-warning btn-lg float-right" role="button">
               Show hint!
-              <% if !@app.session['hints'].nil? %>
                 <% @app.session['hints'].each do |value| %>
                 <%="<span class='badge badge-light'>#{value}</span>"%>
               <% end
-                end%>
+                %>
             </button>
           </div>
         </div>

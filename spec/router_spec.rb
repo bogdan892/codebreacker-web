@@ -21,7 +21,7 @@ RSpec.describe Router do
 
   describe 'redirect to game page' do
     before do
-      env 'rack.session', game: game
+      env 'rack.session', game: game, hints: []
       post(Constants::GAME_URL)
     end
 
